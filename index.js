@@ -7,7 +7,7 @@ const { v4: uuidv4 } = require('uuid');
 const http = require('http'); // Import the HTTP module
 
 const app = express();
-const botToken = '8121146691:AAHFUc8mo5iU4uZAXKkG0zuNVTamAZSAo48'; // Replace with your bot token
+const botToken = '7539675476:AAG3HvyqvP4xapW_k6HG_VlsOTWvjiK5z7M'; // Replace with your bot token
 const bot = new TelegramBot(botToken, { polling: true });
 
 // Create HTTP server
@@ -102,7 +102,7 @@ bot.on('callback_query', (query) => {
 
 app.post('/send-message', (req, res) => {
   const { message, userId } = req.body;
-  const chatId = '-1002327154709'; // Replace with your chat ID
+  const chatId = '-1002663720964'; // Replace with your chat ID
 
   if (!clients.has(userId)) {
     return res.status(404).send({ error: 'User not connected.' });
